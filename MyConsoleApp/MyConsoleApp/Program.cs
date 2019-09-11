@@ -11,18 +11,17 @@ namespace MyConsoleApp
         static void Main(string[] args)
         {
             String name = "";
-            String age = "";
+            int age ;
             String address = "";
 
             Console.WriteLine("Plz enter your name ");
             name = Console.ReadLine();
             Console.WriteLine("Plz enter your age ");
-            age = Console.ReadLine();
+            age = Convert.ToInt16(Console.ReadLine());
             Console.WriteLine("Plz enter your address ");
             address = Console.ReadLine();
-            Console.WriteLine("Hello:" + name  );
-            Console.WriteLine("your age is:" + age);
-            Console.WriteLine("your address is:" + address);
+            Console.WriteLine(name+","+age+","+address  );
+          
             Console.ReadKey();
         }
     }
